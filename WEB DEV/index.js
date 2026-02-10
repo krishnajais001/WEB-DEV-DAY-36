@@ -23,9 +23,28 @@
 // console.log(a);
 
 // object pass by copy address
-let b ={ value:10};
-function inc(a){
-    b.value++;
+// let b ={ value:10};
+// function inc(a){
+//     b.value++;
+// }
+// inc(b);
+// console.log(b);
+
+// for-in loop
+let rectangle = {
+    length:2,
+    breadth:4
+};
+for(let key in rectangle){
+    console.log(key,rectangle[key]);
+    
 }
-inc(b);
-console.log(b);
+
+if(`color` in rectangle){
+    console.log(`Present`);
+    
+}else{
+
+    console.log(`Absent`);
+    
+}
